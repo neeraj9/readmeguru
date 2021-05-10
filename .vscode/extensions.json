@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "stkb.rewrap",
-        "andyhuzhill.typewriterscrollmode"
+        "andyhuzhill.typewriterscrollmode",
+        "wmaurer.change-case"
     ]
 }

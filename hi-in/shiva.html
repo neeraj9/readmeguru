@@ -17,7 +17,12 @@
     <!-- customization of hero image -->
     <style >
         .site-header::before {
-        background-image: url(images/lord-shiva.svg);
+          background-image: url(images/lord-shiva.svg);
+        }
+        @media only screen and (max-width: 600px) {
+          .site-header::before {
+            background-image: url(images/lord-shiva-center.svg);
+          }
         }
     </style>
 </head>
@@ -30,6 +35,12 @@
       <div class="container-fluid">
         <a class="navbar-brand font-weight-normal" href="#page-hero">
           <i class="fas fa-cube mr-2"></i>भगवान शिव
+        </a>
+        <a class="font-weight-normal" href="../shiva.html">
+          English
+        </a>&nbsp; | &nbsp;
+        <a class="font-weight-normal" href="#">
+          हिंदी
         </a>
         <button
           type="button"

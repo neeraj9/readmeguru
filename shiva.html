@@ -17,7 +17,12 @@
     <!-- customization of hero image -->
     <style >
         .site-header::before {
-        background-image: url(images/lord-shiva.svg);
+          background-image: url(images/lord-shiva.svg);
+        }
+        @media only screen and (max-width: 800px) {
+          .site-header::before {
+            background-image: url(images/lord-shiva-center.svg);
+          }
         }
     </style>
 </head>
@@ -30,6 +35,12 @@
       <div class="container-fluid">
         <a class="navbar-brand font-weight-normal" href="#page-hero">
           <i class="fas fa-cube mr-2"></i>LORD SHIVA
+        </a>
+        <a class="font-weight-normal" href="#">
+          English
+        </a>&nbsp; | &nbsp;
+        <a class="font-weight-normal" href="hi-in/shiva.html">
+          हिंदी
         </a>
         <button
           type="button"
@@ -64,7 +75,7 @@
                   Lord Shiva
                 </h2>
               </div>
-              <div class="col">    
+              <div class="col">
                 <p class="header-subtitle lead font-weight-light">
                   In Indian contemplation, Lord Shiva is worshipped
                   as the founder of Vishwamangal. According to Yajurveda,

@@ -3,12 +3,8 @@ $(function () {
   let nav = document.querySelector('.site-nav')
   let headerCue = document.querySelector('.header-cue')
   let contentStart = document.querySelector('#content-start')
-  //let monsterScroll = document.querySelectorAll('#monster-group .monster')
   let navHeight = nav.scrollHeight
 
-  //monsterScroll.forEach(
-  //  (item) => (item.style.animationDelay = `${Math.random() * 1 + 0.4}s`)
-  //)
 
   function inViewPort(el) {
     let rect = el.getBoundingClientRect()
@@ -36,12 +32,6 @@ $(function () {
     headerContent.style.transform = `translateY(-${top / 1.5}px)`
     headerContent.style.opacity =
       1 - Math.max(top / (window.innerHeight * 0.2), 0)
-
-    //monsterScroll.forEach((item) =>
-    //  inViewPort(item)
-    //    ? item.classList.add('appear')
-    //    : item.classList.remove('appear')
-    //)
 
     window.requestAnimationFrame(moveHeader)
   }
